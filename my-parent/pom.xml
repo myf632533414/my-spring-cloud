@@ -18,6 +18,7 @@
         <module>../user</module>
         <module>../user-api</module>
         <module>../my-eureka</module>
+        <module>../my-gateway</module>
     </modules>
 
     <properties>
@@ -62,6 +63,22 @@
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis-version}</version>
             </dependency>
+
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-gateway -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-gateway</artifactId>
+                <version>${spring-cloud-version}</version>
+            </dependency>
+
+            <!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+                <version>${spring-cloud-version}</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>
